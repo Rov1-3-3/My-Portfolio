@@ -1,0 +1,237 @@
+
+home.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script>
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+        
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+</head>
+<body>
+        <div class="hero" id="home">
+            <nav>
+                <img class="logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#info">My Info</a></li>
+                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#gallery">My Gallery</a></li>
+                </ul>
+            </nav>
+
+            <div class="detel">
+                <h1>Hi, I'm  Rov P. </br> <span>Arteta</span></h1>
+                <p>This is my website in
+                </br>Web System and Technologies
+            </p>
+            <div class="buttons">
+                <button>READ MORE</button>
+            </div>
+            </div>
+            <div class="images">
+               
+                <img src="img/Rov.jpg" class="boy">
+            </div>
+            
+        </div>
+
+        <div class="about-section" id="info">
+            <div class="heading">
+                <h1>My Information</h1>
+              
+            </div>
+        
+            <div class="info">
+                <section class="about">
+                    <div class="about-image">
+                        <img src="img/mee.jpg">
+                    </div>
+        
+                    <div class="about-content">
+                        <h2>INFORMATION</h2>
+                    <div class="form">
+                        <P>Name: Rov P. Arteta
+                        </br>Age: 22 Years Old
+                        </br>Course: Bachelor of Science Information and Technology
+                        </br>Major: Web Development
+                        </br>School: PHINMA-UI
+                        </P>
+                    </div>
+                    </div>
+        
+                </section>
+            </div>
+          
+        </div>
+          
+        <div class="gallery" id="gallery">
+
+            <input type="radio" name="photos" id="check1" checked>
+            <input type="radio" name="photos" id="check2">
+            <input type="radio" name="photos" id="check3">
+            <input type="radio" name="photos" id="check4">
+            
+            <div class="picture-gal">
+                <h1>My Gallery</h1>
+                <div class="top-content">
+                <h3>Gallery</h3>
+                <label for="check1">All</label>
+                <label for="check2">Rov</label>
+                <label for="check3">My Works</label>
+                <label for="check4">School</label>
+            </div>
+            
+            <div class="photo-gallery">
+            
+                <div class="pic Events">
+                    <img src="img/we.jpg">
+                </div>
+            
+                <div class="pic Bonding">
+                    <img src="img/work (1).png">
+                </div>
+            
+                <div class="pic Outing">
+                    <img src="img/school1.png">
+                </div>
+            
+                <div class="pic Events">
+                    <img src="img/us.jpg">
+                </div>
+            
+                <div class="pic Bonding">
+                    <img src="img/work (2).png">
+                </div>
+            
+                <div class="pic Outing">
+                    <img src="img/sc1.png">
+                </div>
+            
+                <div class="pic Events">
+                    <img src="img/me.jpg">
+                </div>
+            
+                <div class="pic Bonding">
+                    <img src="img/works.png">
+                </div>
+            
+             
+            
+            
+            </div>
+            </div>
+            </div>  
+        
+        
+        
+        
+        
+        
+        <div class="picture">
+               
+            <img src="img/oppa.avif" class="man">
+        </div>  
+
+        <div class="wrapper" id="skills">
+            <div class="shape-1"></div>
+            <div class="shape-2"></div>
+            <div class="container">
+                <h2>My Skills </h2>
+                <div class="skills">
+                    <div class="details">
+                        <span>Web Development</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="html-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Programming</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="css-bar"></div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <div class="details">
+                        <span>Animation</span>
+                        <span>20%</span>
+                    </div>
+                    <div class="bar">
+                        <div id="js-bar"></div>
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+              </div>
+            </div>
+
+            <div class="footer-basic"  >
+                <footer>
+                    <div class="social">
+                        <a href="https://www.facebook.com/search/top?q=anime%20page"><i class="fa fa-facebook-official"></i></a>
+                        <a href="https://www.instagram.com/todayanimenews/?hl=en"><i class="fa fa-instagram"></i></a>
+                        <a href="https://twitter.com/search?q=animenews&src=typed_query"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.youtube.com/@DailyAnimeYT"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                    <p class="copyright">Managed and Created by Rov P. Arteta @ 2023</p>
+                </footer>
+            </div>
+        
+            <a href="#home" id="myBtn" title="Go to top">
+                <i class="fa fa-hand-pointer-o"></i>
+            </a>
+            
+            <script>
+                let mybutton = document.getElementById("myBtn");
+                window.onscroll = function() {scrollFunction()};
+                function scrollFunction(){
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+            mybutton.style.display="block";
+            } else{
+            mybutton.style.display="none"
+            }
+        }
+        
+            </script>
+            
+
+    
+
+
+</body>
+</html>
